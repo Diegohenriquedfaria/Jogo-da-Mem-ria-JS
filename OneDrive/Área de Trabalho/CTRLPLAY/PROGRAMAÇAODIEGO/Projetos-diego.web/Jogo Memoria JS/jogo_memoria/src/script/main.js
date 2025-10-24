@@ -1,4 +1,11 @@
-function urlBuilder(number){}
+function urlBuilder(number){
+
+    number +="";
+    number = number.padStar( 2, '0');
+
+    return `imagens/heros/card${number}.jpeg`;
+    
+}
 
 let card = new CardManager(urlBuilder);
 let board = newBoardManager("board" , 50 , card);
